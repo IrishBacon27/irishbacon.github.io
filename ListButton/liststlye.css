@@ -1,12 +1,37 @@
                     
+aside {
+    border-radius: 8px;
+    border: 1px black solid;
+    font-size: 120%;
+    font-style: italic;
+
+    float: right;
+    background-color: blanchedalmond;
+    width: 33%;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
 button {
-    background-color: rgb(75, 0, 130);
-    border: 4px black thick;
+    background-color:black;
+    border: 4px white;
     color: greenyellow;
     text-align: center;    
     font-size: 16px;
 }
-
+button.test-button {
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+button.margin-button {
+    margin: 25px;
+}
+div#margin-div{
+    border: 1px black solid;
+    display: inline-block;
+}
 footer {
     background-color: gray;
     text-align: center;
