@@ -19,15 +19,19 @@ button {
     text-align: center;    
     font-size: 16px;
 }
-button.test-button {
-    padding: 25px;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-}
 button.margin-button {
     margin: 25px;
 }
+.btn-padding {
+    padding: 25px;
+    border: 10px red double;    
+    border-radius: 22px;
+}
+
+.btn-padding:hover {
+    background-color: aqua;
+    border-color: white;
+} 
 div#margin-div{
     border: 1px black solid;
     display: inline-block;
