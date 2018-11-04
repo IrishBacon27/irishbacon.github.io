@@ -17,5 +17,12 @@ p {
       color: black
   }
   img#powernine {
-    float: center;
+    float: right;
+}
+img#protour {
+    float: left;
+}
+img#me {
+    height: 250px;
+    width: 250px;
 }
