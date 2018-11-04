@@ -58,6 +58,14 @@ img#jtms {
     height: 250px;
     width: 250px;
 }
+img#kibler {
+    height:300px;
+    width: 450px;
+}
+img#finkel {
+    height: 75%;
+    width: 75%;
+}
 nav {        
     background-color: skyblue;
     border: 2px green;
