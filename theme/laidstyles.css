@@ -24,6 +24,9 @@ footer {
     padding: 8px;
     margin: -1px 0px 0px 0px;
 }
+figure.float-right {
+    float: right;
+}
 h1 {
     font-family: garamond;
     color: rgb(5, 2, 29);
@@ -43,9 +46,6 @@ hr {
 }
 p { 
       color: rgb(6, 3, 32);
-  }
-img#powernine {
-    float: right;
 }
 img#protour {
     float: center;
