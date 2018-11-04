@@ -1,18 +1,44 @@
 body {
     font-size: 133%;
     font-family: sans-serif;
-    background-color: grey
+    background-color: rgb(85, 129, 134);
+    color:  rgb(7, 0, 7);
   }
 
-h1 {
-    color: black
-    
+  h1 {
+    font-family: garamond;
+    color: rgb(7, 0, 7);
 }
 
+
 h2 {
-    color: black
+    color:  rgb(7, 0, 7);
+    font-family: garamond;
 }
 
 p { 
-      color: black
+      color:  rgb(7, 0, 7);
   }
+
+  nav {        
+    background-color: skyblue;
+    border: 2px green;
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline;
+    padding: 8px;    
+}
+img#omniscience {
+    height: 25%;
+    width: 25%;
+}
