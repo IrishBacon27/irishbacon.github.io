@@ -29,8 +29,8 @@ h1 {
     color: rgb(5, 2, 29);
 }
 h2 {
-    color:  rgb(7, 0, 7);
     font-family: garamond;
+    color: rgb(5, 2, 29);
 }
 hr {
     display: block;
@@ -68,7 +68,7 @@ img#finkel {
 }
 nav {        
     background-color: skyblue;
-    border: 2px green;
+    border: 2px rgb(1, 5, 58);
     padding: 8px;
     margin: -1px 0px 0px 0px;
 }
