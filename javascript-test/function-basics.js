@@ -1,6 +1,7 @@
 window.onload = () => {
 
     const functionCalls = document.getElementById('function-calls');
+    const callUserInput = document.getElementById('call-user-input')
 
     functionCalls.onclick = () => {
         simpleFunction();
@@ -8,6 +9,12 @@ window.onload = () => {
         functionReturn();
         const returnValue = functionReturn()
         console.log(returnValue);
+    }
+
+    callUserInput.onclick = () => {
+        const userInputParagraph = document.getElementById('show-user-input');
+        const userInput = document.getElementById('user-input');
+        userInputParagraph.textContent = userInput.value;
     }
 }
 
