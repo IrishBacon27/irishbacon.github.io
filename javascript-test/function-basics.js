@@ -1,5 +1,15 @@
+window.onload = () => {
+    const simpleFunctionParagraph = document.getElementById('simple-function');
+    const functioncalls = document.getElementById('function-calls');
+
+    functionCalls.onclick = () => {
+        simpleFunction();
+    }
+}
+
 function simpleFunction() {
     console.log("functions should consist of statements designed to perform a single task")
+    simplefunctionParagraph.textContent = 'some value';
 }
 
 function functionParameters(value) {
