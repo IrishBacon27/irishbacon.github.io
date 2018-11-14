@@ -1,10 +1,9 @@
-var person = {
+const myObject = {
     firstName: 'Jonas',
-    lastName: 'Laid'
-};
-var person = {
-    sayHello: function() {
-        'use strict';
-        console.log('Hello');
+    lastName: 'Laid',
+    getName: function() {
+        return this.firstName + ' ' + this.lastName;
     }
 };
+
+console.log(myObject.firstName);
