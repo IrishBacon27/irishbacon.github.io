@@ -7,37 +7,37 @@ window.onload = () => {
         const feetToInchesDisplay = document.getElementById('feet-to-inches-display');
 
         feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value);
-};
+    };
 
-const milesToFeetAction =
-    document.getElementById('miles-to-feet-action');
+    const milesToFeetAction =
+        document.getElementById('miles-to-feet-action');
 
-milesToFeetAction.onclick = () => {
-    const milesToFeetInput = document.getElementById('miles-to-feet-input');
-    const milesToFeetDisplay = document.getElementById('miles-to-feet-display');
+    milesToFeetAction.onclick = () => {
+        const milesToFeetInput = document.getElementById('miles-to-feet-input');
+        const milesToFeetDisplay = document.getElementById('miles-to-feet-display');
 
-    milesToFeetDisplay.textContent = milesToFeet(milesToFeetInput.value);
-};
+        milesToFeetDisplay.textContent = milesToFeet(milesToFeetInput.value);
+    };
 
-const areaOfTriangleAction = 
-document.getElementById('area-of-triangle-action');
+    const areaOfTriangleAction =
+        document.getElementById('area-of-triangle-action');
 
-areaOfTriangleAction.onclick = () => {
-    const areaOfTriangleAction = document.getElementById('area-of-triangle-input');
-    const areaOfTriangleDisplay = document.getElementById('are-of-traingle-display');
+    areaOfTriangleAction.onclick = () => {
+        const areaOfTriangleAction = document.getElementById('area-of-triangle-input');
+        const areaOfTriangleDisplay = document.getElementById('are-of-traingle-display');
 
-    areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput.value);
-};
+        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput.value);
+    };
 
-const areaOfCircleAction =
-document.getElementById('area-of-circle-action');
+    const areaOfCircleAction =
+        document.getElementById('area-of-circle-action');
 
-areaOfCircleAction.onclick = () => {
-    const areaOfCircleInput = document.getElementById('area-of-circle-input');
-    const areaOfCircleDisplay = document.getElementById('area-of-circle-display');
+    areaOfCircleAction.onclick = () => {
+        const areaOfCircleInput = document.getElementById('area-of-circle-input');
+        const areaOfCircleDisplay = document.getElementById('area-of-circle-display');
 
-    areaOfCircleDisplay.textContent = areaOfCircle(areaOfCircleInput.value)
-};
+        areaOfCircleDisplay.textContent = areaOfCircle(areaOfCircleInput.value)
+    };
 };
 
 const feetToInches = (feet) => {
