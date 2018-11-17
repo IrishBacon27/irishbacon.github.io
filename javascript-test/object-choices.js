@@ -18,8 +18,6 @@ function loader () {
     functionButton.onclick = functionObject;
 }
 
-window.onload = loader;
-
 //Key Value pairs
 //Comma separated list of key value pairs
 const myObject = {
