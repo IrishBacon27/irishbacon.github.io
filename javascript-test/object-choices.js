@@ -1,5 +1,18 @@
+window.onload = () => {
+
+    const simpleObject = document.getElementById('function-calls');
+    const callUserInput = document.getElementById('call-user-input')
+
+    functionCalls.onclick = () => {
+        simpleFunction();
+        functionParameters("Many functions take parameters.");
+        functionReturn();
+        const returnValue = functionReturn()
+        console.log(returnValue);
+    }
+//in class work
 function loader () {
-    const getNamesButton = document.getElementById('getNames');
+    const objectLiteralButton = document.getElementById('simple-object-action');
     const functionButton = document.getElementById('getFunctionObject');
 
     getNamesButton.onclick = function() {
