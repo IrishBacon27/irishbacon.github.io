@@ -19,15 +19,5 @@ window.onload = () => {
     console.log(functionObject.getFullName()); 
 }
 
-//Week 10
-window.onload = () => {
-    const objectLiteralAction = document.getElementById('object-literal-action');
-    const numbersAction = document.getElementById('numbers-action');
 
-    objectLiteralAction.onclick = () => {
-        const objectLiteralDisplay = document.getElementById('object-literal-display');
-        console.log(objectLiteral.getName());
-
-        objectLiteralDisplay.textContent = objectLiteral.getName();
-    }
 
