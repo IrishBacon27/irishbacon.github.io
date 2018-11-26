@@ -46,6 +46,7 @@ footer {
 }
 header {
     background-color: green;
+    text-align: center;
 }
 
 header p {
