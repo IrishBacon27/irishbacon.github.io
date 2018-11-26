@@ -30,6 +30,7 @@ figure.float-right {
 h1 {
     font-family: garamond;
     color: rgb(5, 2, 29);
+    float: center;
 }
 h2 {
     font-family: garamond;
