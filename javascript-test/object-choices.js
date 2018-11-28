@@ -51,4 +51,3 @@ myObject.getFullName = function() {
     " " + this.middleName +
     " " + this.lastName;
 };
-

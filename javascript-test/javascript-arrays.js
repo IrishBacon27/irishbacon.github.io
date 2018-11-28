@@ -1,13 +1,29 @@
 window.onload = () => {
 
     const arrays = {
-        numbers: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+        numbers: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+        languageNames: ['JavaScript', 'HTML', 'CSS', 'Python', 'C/C+'],
+        languagePopularity: [
+            {
+                language: 'JavaScript',
+                rank: 2
+            },
+            {
+                language: 'HTML',
+                rank: 1
+            },
+            {
+                language: 'CSS',
+                rank: 3
+            }
+            
+        ]
     }
 }
 
-let compareTool = comparLanguage;
+let compareTool = compareLanguage;
 
-const numbersActio = document.getElementById('numbers-action');
+const numbersAction = document.getElementById('numbers-action');
 const languageNamesAction = document.getElementById('tech-language-names-action');
 const techLanguagePopularityAction = document.getElementById('tech-language-popularity-action');
 
@@ -31,7 +47,9 @@ languageNamesAction.onclick = () => {
 }
 
 techLanguagePoplularityAction.onclick = () => {
-    const techLanguagePoplularityDisplay = document.getElementById('tech-language-popularity');
+    const techLanguagePoplularityDisplay = document.getElementById('tech-language-popularity-display');
 
-    arrays.techLanguagePopularity.sort(compareTool);
+ 
+    }
 }
+
