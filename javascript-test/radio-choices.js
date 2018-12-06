@@ -44,3 +44,5 @@ const setColor = (className) => {
     currentClass = className;
     element.classList.add(className);
 }
+
+     
