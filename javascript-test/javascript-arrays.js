@@ -1,5 +1,33 @@
 window.onload = () => {
 
+    const arrays = {
+        numbers: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+        languageNames: ['JavaScript', 'HTML', 'CSS', 'Python', 'C/C+'],
+        languagePopularity: [
+            {
+                language: 'JavaScript',
+                rank: 1
+            },
+            {
+                language: 'HTML',
+                rank: 2
+            },
+            {
+                language: 'CSS',
+                rank: 3
+            },
+            {
+                language: 'Python',
+                rank: 4
+            },
+            {
+                language: 'C/C+',
+                rank: 5,
+            }
+    
+        ]
+    };
+    
     const numbersAction = document.getElementById('numbers-action');
     const languageNamesAction = document.getElementById('tech-language-names-action');
     const techLanguagePopularityAction = document.getElementById('tech-language-popularity-action');
@@ -13,9 +41,8 @@ window.onload = () => {
         }
     };
 
-    techLanguageNamesAction.onclick = () => {
+    languageNamesAction.onclick = () => {
         const languageNamesDisplay = document.getElementById('tech-language-names-display');
-
         for (language of arrays.languageNames.sort()) {
             const li = document.createElement("li");
             li.appendChild(document.createTextNode(language));
@@ -36,34 +63,6 @@ window.onload = () => {
         }
     };
 
-};
-
-const arrays = {
-    numbers: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
-    languageNames: ['JavaScript', 'HTML', 'CSS', 'Python', 'C/C+'],
-    languagePopularity: [
-        {
-            language: 'JavaScript',
-            rank: 1
-        },
-        {
-            language: 'HTML',
-            rank: 2
-        },
-        {
-            language: 'CSS',
-            rank: 3
-        },
-        {
-            language: 'Python',
-            rank: 4
-        },
-        {
-            language: 'C/C+',
-            rank: 5,
-        }
-
-    ]
 };
 
 function compareRank(a, b) {

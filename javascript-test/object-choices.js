@@ -11,13 +11,17 @@ window.onload = () => {
         const functionObjectDisplay = document.getElementById('function-object-display');
     }
 
-    customClassButton.onclick = () => {
-        const customClassDisplay = document.getElementById('custom-class-display');
+    customClassButton.onclick = function() {
+        const customClassDisplay = document.getElementById('customClassNameDisplay');
+        const customClass = new CustomClass();
+        const name = customClass.getName();
+        customClassDisplay.textContent = name;
     }
-
-    const myObject = new FunctionObject();
-    console.log(functionObject.getFullName());
 }
+
+    //const myObject = new FunctionObject();
+   // console.log(functionObject.getFullName());
+//}
 
 
 //key value pairs
@@ -47,6 +51,17 @@ function FunctionObject() {
 }
 
 const functionObject = new FunctionObject();
+
+class CustomClass {
+    constructor() {
+        this.firstName = 'Jonas';
+        this.lastName = 'Laid'
+    }
+
+    getName() {
+       return this.firstName + ' ' + this.lastName;
+    }
+}
 
 console.log (myObject.firstName);
 console.log (myObject['firstName']);
