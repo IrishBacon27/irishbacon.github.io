@@ -48,7 +48,7 @@ languageNamesAction.onclick = () => {
 
 techLanguagePoplularityAction.onclick = () => {
     const techLanguagePoplularityDisplay = document.getElementById('tech-language-popularity-display');
-
+    for (let techLanguagePoplularity of techLanguagePoplularity)
  
     }
 }
