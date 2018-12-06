@@ -4,9 +4,12 @@ window.onload = () => {
     myForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const value = document.querySelector('input[name="sorter"]:checked').value;
-        if (value.toLowerCase() === 'language') {
+        if (value.toLowerCase() === 'green') {
+            setColor("blueBackground");
             showChoice(value);
-        } else {
+        } 
+        else {
+            setColor("greenBackground");
             showChoice(value);
         }
     });
@@ -18,21 +21,6 @@ function showChoice(value) {
     userDisplay.textContent = value;
 
 }
-
-const myForm = document.getElementById('sort-type');
-
-myForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const value = document.querySelector('input[name="sorter"]:checked').value;
-    if (value.toLowerCase() === 'green') {
-        setColor("blueBackground");
-        showChoice(value);
-    } else {
-        setColor("greenBackground");
-        showChoice(value);
-    }
-});
-
 let currentClass = null;
 
 const setColor = (className) => {
@@ -43,6 +31,4 @@ const setColor = (className) => {
     }
     currentClass = className;
     element.classList.add(className);
-}
-
-     
+}    
