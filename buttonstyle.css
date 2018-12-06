@@ -16,32 +16,38 @@ aside {
     background-color: aqua;
 }
 
-.greenBackground {
-    background-color: green;
+.maroonBackground {
+    background-color: maroon;
+}
+.darkredbackground {
+    background-color: darkred;
+}
+.orangeBackground {
+    background-color: orange;
 }       
 .byline {
     font-style: italic;
     font-size: 80%;
 }
 button {
-    background-color:black;
-    border: 4px solid white;
+    background-color: goldenrod;
+    border: 25px solid rebeccapurple;
     color: greenyellow;
     text-align: center;    
     font-size: 16px;
 }
 button.margin-button {
-    margin: 25px;
+    margin: 15px;
 }
 .btn-padding {
-    padding: 25px;
-    border: 10px red double;    
+    padding: 15px;
+    border: 10px rebeccapurple double;    
     border-radius: 22px;
 }
 
 .btn-padding:hover {
-    background-color: aqua;
-    border-color: white;
+    background-color: goldenrod;
+    border-color: rebeccapurple double;
 } 
 div#margin-div{
     border: 1px black solid;

@@ -4,8 +4,8 @@ window.onload = () => {
     myForm.addEventListener('submit', (event) => {
         event.preventDefault();
         const value = document.querySelector('input[name="sorter"]:checked').value;
-        if (value.toLowerCase() === 'green') {
-            setColor("greenBackground");
+        if (value.toLowerCase() === 'maroon') {
+            setColor("maroonBackground");
             showChoice(value);
         } 
         else {
