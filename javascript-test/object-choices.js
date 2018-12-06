@@ -19,6 +19,7 @@ window.onload = () => {
     console.log(functionObject.getFullName());
 }
 
+
 //key value pairs
 //comma separated list of key value pairs.
 const myObject = {
@@ -28,8 +29,15 @@ const myObject = {
         return this.firstName + ' ' + this.lastName;
     }
 };
+myObject.middleName = 'Karth';
 
-function functionObject() {
+myObject.getFullName = function() {
+    return this.firstName +
+        " " + this.middleName +
+        " " + this.lastName;
+};
+
+function FunctionObject() {
     const firstName = "Jonas";
     const lastName = "Laid";
 
@@ -38,16 +46,11 @@ function functionObject() {
     }
 }
 
+const functionObject = new FunctionObject();
+
 console.log (myObject.firstName);
 console.log (myObject['firstName']);
 console.log (myObject.getName());
 console.log (myObject.middleName);
 console.log (myObject.getFullName());
-
-myObject.middleName = 'Karth'
-
-myObject.getFullName = function() {
-    return this.firstName +
-    " " + this.middleName +
-    " " + this.lastName;
-};
+console.log (functionObject.getFullName());
