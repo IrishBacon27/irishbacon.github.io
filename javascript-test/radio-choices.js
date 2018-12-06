@@ -5,11 +5,11 @@ window.onload = () => {
         event.preventDefault();
         const value = document.querySelector('input[name="sorter"]:checked').value;
         if (value.toLowerCase() === 'green') {
-            setColor("blueBackground");
+            setColor("greenBackground");
             showChoice(value);
         } 
         else {
-            setColor("greenBackground");
+            setColor("aquaBackground");
             showChoice(value);
         }
     });
